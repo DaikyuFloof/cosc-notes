@@ -28,3 +28,9 @@ while i < 6:
       if i == 3:
          continue
       print(i)
+
+while i < 6:
+   print(i)
+   i += 1
+else:
+   print('i is no longer than 6')
