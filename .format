@@ -1,0 +1,3 @@
+>>> a = 'albert'
+>>> b = 'today'
+>>> 'hello {}. How are you {}?'.format(a,b)
