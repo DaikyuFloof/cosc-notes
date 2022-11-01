@@ -1,3 +1,6 @@
 >>> a = 'albert'
 >>> b = 'today'
 >>> 'hello {}. How are you {}?'.format(a,b)
+
+>>> 'Hello. My name is {}'.format('LCpl')
+'Hello. My name is LCpl'
