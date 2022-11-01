@@ -1,0 +1,15 @@
+   #!/usr/bin/env python3
+   
+   def guess_number(n):
+       while True:
+           x = int(input('number between 0-100?'))
+           if n == x:
+               print('WIN')
+               break
+           elif x < n:
+              print('too low')
+  #        elif x > n:
+          else:
+             print('too high')
+  
+  guess_number(23)
