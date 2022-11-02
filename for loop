@@ -63,3 +63,12 @@ def makedeck():
   
 makedeck()
 # END
+
+for i in range(10,-1,-1):
+  print(i)
+# END, starts counting down from ten down to zero by subtracting 1
+
+primes = [1, 2, 3, 5, 7, 11, 13]
+primes[0:2]
+# starts at this first and stops\doesn't count the last index, END
+#[start, stop, ste
