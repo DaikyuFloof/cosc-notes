@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+def invert(l):
+    '''Inverts the given list
+    Args:
+        l (list): list of strings representing integers in the range [0-255]
+    Returns:
+        None
+    '''
+    for n in range(0,len(l)):
+        l[n] = str(255 - int(l[n]))
+
+def inverted(l):
+    '''Returns a new list that is the given list inverted
+    Args:
+        l (list): list of strings representing integers in the range [0-255]
+    Returns:
+        list: new list that is the given list inverted
+    '''
+    newlist = []
+    for n in l:
+        newlist.append(str(255 - int(n)))
+    return(newlist)
