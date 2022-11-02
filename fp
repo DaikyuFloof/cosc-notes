@@ -13,3 +13,8 @@ with open('test.txt', 'w') as fp:
     fp.readline()
     fp.readlines()
     
+
+
+with open('travel_plans.txt', 'r') as fp:
+    n = fp.read(1000)
+    num = len(n)
