@@ -1,0 +1,19 @@
+def xo(s):
+    return True
+Xs = 0
+Os = 0
+for i in 's':
+        if i == "x":
+            Xs = Xs + 1
+        elif i == "X":
+            Xs = Xs + 1
+        elif i == "o":
+            Os = Os + 1
+        elif i == "O":
+            Os = Os + 1
+        
+            
+if (Xs) == (Os):
+    print("true")
+elif (Xs) != (Os):
+    print("false")
