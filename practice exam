@@ -168,3 +168,27 @@ def q9(miltime):
     pass
 
 
+def q10(numlist):
+    '''
+    TLO: 112-SCRPY003, LSA 1
+    TLO: 112-SCRPY004, LSA 1
+    Given the argument numlist as a list of numbers, return True if all 
+    numbers in the list are NOT negative. If any numbers in the list are
+    negative, return False.
+    '''
+    '''z = 0
+    for n in numlist:
+        if n < 0:
+            z = z + 1
+        else:
+            z = z
+        if z == 0:
+            return True
+        elif z != 0:
+            return False
+        '''
+    for i in numlist:
+        if i < 0:
+            return False
+    return True
+    pass
