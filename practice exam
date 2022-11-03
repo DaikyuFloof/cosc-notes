@@ -16,3 +16,27 @@ def q1(floatstr):
     
 #return [float(x) for x in float.split(',')]
 #return list(map(float,floatstr.split(',')))
+
+def q2(*args):
+    '''
+    TLO: 112-SCRPY006, LSA 3
+    TLO: 112-SCRPY007, LSA 4
+    Given the variable length argument list, return the average
+    of all the arguments as a float
+    '''
+    s = 0
+    for arg in args:
+        s += arg
+    return s/len(args)
+    #return [float((sum('args')) / len(str(args.split(' '))))]
+
+    pass
+
+def q3(lst,n):
+    '''
+    TLO: 112-SCRPY004, LSA 3
+    Given a list (lst) and a number of items (n), return a new 
+    list containing the last n entries in lst.
+    '''
+   return lst[-n:]
+    pass
