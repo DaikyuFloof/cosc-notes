@@ -14,3 +14,4 @@ def q1(floatstr):
 
     pass
     
+'''return [float(x) for x in float.split(',')]'''
