@@ -1,0 +1,29 @@
+>>> romanNumerals = {'I':1, 'V':5, 'X':10, 'L':50}
+>>> romanNumerals
+{'I': 1, 'V': 5, 'X': 10, 'L': 50}
+>>> type(romanNumerals)
+<class 'dict'>
+>>> romanNumerals['C'] = 100
+>>> romanNumerals['D'] = 500
+>>> romanNumerals['M'] = 1000
+>>> romanNumerals
+{'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 1000}
+>>> romanNumerals['C']
+100
+>>> romanNumerals['C'] + romanNumerals['I']
+101
+>>> 'C' in romanNumerals
+True
+>>> del romanNumerals['C']
+>>> 'C' in romanNumerals
+False
+
+>>> for key in romanNumerals:
+...   print('{} = {}'.format(key, romanNumerals[key]))
+... 
+I = 1
+V = 5
+X = 10
+L = 50
+D = 500
+M = 1000
