@@ -1,8 +1,10 @@
 result = [x for x in range(0,100,5) if x % 2 == 1]
 result
+#End
 
 result = sum([x for x in range(2,1001,2)])
 result
+#END
 
 def makedeck():
   suits = ['\u2660','\u2665','\u2666','\u2663']
@@ -11,3 +13,5 @@ def makedeck():
   print(deck)
   
   makedeck()
+#END
+
