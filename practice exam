@@ -181,7 +181,7 @@ def q10(numlist):
         if n < 0:
             z = z + 1
         else:
-            z = z
+            z = z + 0
         if z == 0:
             return True
         elif z != 0:
