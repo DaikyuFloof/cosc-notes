@@ -21,7 +21,7 @@ def q2(n):
     commas seperating groups of 3 digits. For example, given 65535
     the returned string should be '65,535'.
     '''
-    return '{:n}'.format(n)
+    return '{:,}'.format(n)
     pass
 
 def q3(lst0, lst1):
@@ -134,7 +134,7 @@ def q9(strng):
         if c in string.digits:
             chars.append(c)
     return chr(int(''.join(chars)))'''
-    return chr(int(''.join[c for c strng if c.isdigit()])))
+    return chr(int(''.join([c for c in strng if c.isdigit()])))
     pass
 
 def q10(arr):
