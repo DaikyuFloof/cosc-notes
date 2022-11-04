@@ -141,7 +141,7 @@ def q8(filename,lst):
          for item in lst:
              if item.lower() == 'stop':
                  break
-             fp.write('{}.\n'.format(item))
+             fp.write('{}\n'.format(item))
 
     pass
 
