@@ -36,9 +36,12 @@ def q3(lst0, lst1):
         nlist.append(i)
     for i in lst1:
         nlist.append(i)
+    #nlist = lst0 + lst1
     nlist = sorted(nlist)
     nlist.reverse()
     return nlist
+#return list(reversed(sorted(lst0+lst1)))
+#return sorted(lst0+lst1, reverse=True)
     pass
 
 def q4(s1,s2,s3):
@@ -51,6 +54,7 @@ def q4(s1,s2,s3):
         return "GO"
     else:
         return "NOGO"
+#return ['NOGO', 'GO'][int(((s1+s2+s3)/3.000000001)//50)]
     pass
 
 def q5(integer, limit):
@@ -61,10 +65,86 @@ def q5(integer, limit):
     a multiple of any integer except 0 itself.
     '''
     nelist = []
-    for x in range(0,(limit +1),3):
+    for x in range(0,(limit +1),(integer)):
         if x % 2 == 0:
             nelist.append(x)
 
     return nelist
+    #return [i for i in range(limit+1) if (i%integer==0) and (i%2==0)]
     pass
 
+def q6(f0, f1):
+    '''
+    Given two filenames, return a list whose elements consist of line numbers
+    for which the two files differ. The first line is considered line 0.
+    '''
+    diffs = []
+    linenumber = 0
+    with open(f0) as file0:
+        with open(f1) as file1:
+            for l0,l1 in zip(file0,file1):
+                if l0 != l1:
+                    diffs.append(linenumber)
+                linenumber += 1
+
+    return diffs
+    pass
+
+def q7(lst):
+    '''
+    Return the first duplicate value in the given list.
+    For example, if given [5,7,9,1,3,7,9,5], the returned value should
+    be 7.
+    '''
+    seen = set()
+    for i in lst:
+        if i in seen:
+            return i
+        else:
+            seen.add(i)
+    
+    pass
+
+def q8(strng):
+    '''
+    Given a sentence as a string with words being separated by a single space,
+    return the length of the shortest word.
+    '''
+   ''' strng.split()
+    k = min(strng)
+    return len(k)'''
+    words = strng.split()
+    minlen = len(words)
+    for word in words:
+        if len(word) < minlen:
+            minlen = len(word)
+        return minlen
+    pass
+
+def q9(strng):
+    '''
+    Given an alphanumeric string, return the character whose ascii value
+    is that of the integer represenation of all of the digits in the string
+    concatenated in the order in which they appear. For example, given
+    'hell9oworld7', the returned character should be 'a' which has
+    the ascii value of 97.
+    '''
+    '''chars = []
+    for c in strng:
+        if c in string.digits:
+            chars.append(c)
+    return chr(int(''.join(chars)))'''
+    return chr(int(''.join[c for c strng if c.isdigit()])))
+    pass
+
+def q10(arr):
+    '''
+    Given a list of positive integers sorted in ascending order, return
+    the first non-consecutive value. If all values are consecutive, return
+    None. For example, given [1,2,3,4,6,7], the returned value should be 6. 
+    '''
+    for i in arr:
+        if (arr[i+1] - arr[i]) != 1:
+            return arr[i+1]
+    return None
+    pass
