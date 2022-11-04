@@ -21,7 +21,7 @@ def q2(n):
     commas seperating groups of 3 digits. For example, given 65535
     the returned string should be '65,535'.
     '''
-
+    return '{:n}'.format(n)
     pass
 
 def q3(lst0, lst1):
