@@ -118,7 +118,7 @@ def q8(strng):
     for word in words:
         if len(word) < minlen:
             minlen = len(word)
-        return minlen
+    return minlen
     pass
 
 def q9(strng):
